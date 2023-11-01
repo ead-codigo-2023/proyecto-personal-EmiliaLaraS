@@ -49,7 +49,7 @@ nav a {
 
 .nuestprod-img{
     width: 100%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
 }
 
 .texto {
@@ -58,4 +58,71 @@ nav a {
     margin-right: 2%;
     padding-bottom: 2%;
 
+}
+
+h4{
+    text-align: center;
+    font-size: medium;
+    padding-top: 5%;
+    padding: 2%;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 2%;
+    font-size: small;
+    text-align: left;
+    padding-bottom: 5%;
+   
+}
+
+.mas-info {
+    color: #FFF;
+}
+
+.pie-pagina {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.titulo-box{
+    padding-top: 6%;
+}
+
+.texto-box {
+    text-decoration:underline; 
+}
+
+.texto-box2{
+    text-decoration:underline; 
+}
+
+.titulo-box1{
+   padding-top: 6%;
+   padding-left: 9%;
+}
+
+
+/*interacción, cambio el color el link navegable al pasar el cursor*/
+a:hover {
+    color: #5cd152; 
+}
+
+/*links navegable*/
+a {
+    color: #006616;
+    transition: color 0.3s ease; 
+    margin: 10%;
+}
+
+/* Clase que se agregará al hacer scroll hacia abajo */
+.scroll-down {
+    background-color: #000000; /* Cambia el color de fondo al hacer scroll hacia abajo */
+}
+
+.rrss{
+    color: #fff;
+    transition: color 0.3s ease; 
+    margin: 0;
 }

@@ -64,32 +64,32 @@ nav a {
 
 }
 
-img {
-    max-width: 60%; /*Responsivo*/
-}
-
-.contenedor{
+.exclamacion{
+    color: #006616;
+    font-size: 200%;
+    font-style: bold;
     text-align: center;
-    padding-bottom: 5%;
-    padding-top: 0;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+img {
+    max-width: 0%; /*Responsivo*/
+}
+
+section {
     display: flex;
-    column-gap:  20px;
-    padding-top: 10%;
-    
+    gap: 20px;
     
 }
 
-.cont-1{
-   column-gap: 10%;
-   text-align: center;
-   
+.contenedor-prod{
+    text-align: center;
+    padding-bottom: 6%;
+    padding-top: 3%;
+    
 }
 
-.cont-{
-column-gap: 30%;
-}
-
-/*Titulo de cada producto*/
 .titulo-prod {
     color: #006616;
     font-size: 120%;
@@ -99,6 +99,11 @@ column-gap: 30%;
     flex-shrink: 0;
     border-radius: 10%;
 }
+
+img {
+    max-width: 100%; /*Responsivo*/
+}
+
 
 /*interacción, cambio el color el link navegable al pasar el cursor*/
 a:hover {

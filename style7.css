@@ -50,3 +50,16 @@ nav a {
 p{
     margin-left: 2%;
 }
+
+.contenedor{
+   margin-left: 2%;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 50%; /* ajusta el ancho de la imagen según sea necesario */
+    
+    text-align: right;
+}
+

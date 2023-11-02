@@ -40,6 +40,8 @@ nav a {
     font-weight: bold;
 }
 
+/*HOME*/
+
 /*Imagen logo*/
 .logo {
     height: 5%;
@@ -53,7 +55,6 @@ nav a {
 }
 
 /*imagen en específico*/ 
-
 img {
     max-width: 100%; /*Responsivo*/
 }
@@ -112,14 +113,12 @@ img {
     padding-bottom: 3%;
 }
 
-
-
 /*contenedor de las cajas de opciones de los productos que venden*/
 .contenedor-prod{
-    text-align: center;
-    padding-bottom: 10%;
-    padding-top: 0;
-    
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
 }
 
 /*Categorías de los productos para que quede como galeria*/
@@ -140,7 +139,6 @@ font-size: 120%;
     flex-shrink: 0;
     border-radius: 10%;
 }
-
 
 /*Caja negra en la parte interior de la página*/
 
@@ -164,7 +162,7 @@ footer {
 }
 
 .titulo-box{
-    padding-top: 6%;
+    padding-top: 2%;
 }
 
 .texto-box {
@@ -190,7 +188,7 @@ a:hover {
 a {
     color: #006616;
     transition: color 0.3s ease; 
-    margin: 10%;
+
 }
 
 /* Clase que se agregará al hacer scroll hacia abajo */
@@ -198,10 +196,204 @@ a {
     background-color: #000000; /* Cambia el color de fondo al hacer scroll hacia abajo */
 }
 
+/*Links de las redes sociales*/
 .rrss{
     color: #fff;
     transition: color 0.3s ease; 
     margin: 0;
 }
 
+.boton {
+    color: #fff;
+    padding-top: 1%;
+    font-size: small;
+}
 
+.atras {
+    color: #fff;
+    text-decoration: underline;
+    margin-block: 2%;
+}
+
+.atras-past {
+    color: #fff;
+    text-decoration: underline;
+    
+}
+
+.boton-nivel {
+    color: #fff;
+    padding-top: 2%;
+    font-size: small;
+
+}
+/*SECCION PASTELERÍA*/
+.pasteleria{
+    background-color: #7EB336;
+    padding: 6% 2%;
+    color: #fff;
+}
+
+.titulo-pasteleria{
+    font-size: 300%;
+    font-style: bold;
+    text-align: left;
+  
+}
+
+.texto-pasteleria{
+    font-size: 140%;
+    font-style: regular;
+    padding-right: 5%;
+
+}
+
+.exclamacion2{
+    color: #006616;
+    font-size: 200%;
+    font-style: bold;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+/*SECCION PANADERIA*/
+
+.main2{
+    padding: 15%;
+}
+
+.panaderia{
+    background-color: #7EB336;
+    padding: 6% 2%;
+    color: #fff;
+}
+
+.titulo-panaderia{
+    font-size: 300%;
+    font-style: bold;
+    text-align: left;
+  
+}
+
+.texto-panaderia{
+    font-size: 140%;
+    font-style: regular;
+    padding-right: 5%;
+
+}
+
+
+/* SECCION HELADERIA*/
+.heladeria{
+    background-color: #7EB336;
+    padding: 6% 2%;
+    color: #fff;
+}
+
+.titulo-heladeria{
+    font-size: 300%;
+    font-style: bold;
+    text-align: left;
+  
+}
+
+.texto-heladeria{
+    font-size: 140%;
+    font-style: regular;
+    padding-right: 5%;
+
+}
+
+/*SECCION DESPENSA*/ 
+
+.despensa{
+    background-color: #7EB336;
+    padding: 6% 2%;
+    color: #fff;
+}
+
+.titulo-despensa{
+    font-size: 300%;
+    font-style: bold;
+    text-align: left;
+  
+}
+
+.texto-despensa{
+    font-size: 140%;
+    font-style: regular;
+    padding-right: 5%;
+
+}
+
+/*SECCION QUIENES SOMOS*/
+
+.titulo{
+    padding-top: 7%;
+    padding-bottom: 1%;
+    color: #006616;
+    margin-left: 2%;
+}
+
+.nuestprod-img{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.texto {
+    margin-left: 2%;
+    font-size: 100%;
+    margin-right: 2%;
+    padding-bottom: 2%;
+
+}
+
+h4{
+    text-align: center;
+    font-size: medium;
+    padding-top: 5%;
+    padding: 2%;
+}
+
+
+/*CONTACTO*/
+.contacto{
+    padding-top: 7%;
+    padding-bottom: 1%;
+    color: #006616;
+    margin-left: 2%;
+}
+
+
+
+.contenedor-cont{
+   margin-left: 2%;
+}
+
+.img-cont{
+    display: block;
+    margin: 0 auto;
+    width: 50%; 
+    
+    text-align: right;
+}
+
+/*TARTALETAS Y PIES/GALLETAS*/
+
+.nivel-3{
+    background-color: #7EB336;
+    padding-bottom: 1%;
+    color: #fff;
+    padding-top: 4%;
+    padding-left: 2%;
+    width: 100%;
+    
+}
+
+.titulo-nivel3 {
+    font-size: 300%;
+    font-style: bold;
+    text-align: left;
+    padding-top: 1%;
+}

@@ -3,72 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tartaletas y "pies"</title>
+    <title>Tartaletas, Tortas y "Pies"</title>
     <link rel="stylesheet" href="style.css" media="screen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,800;1,400&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 <body>
-     <!--Barra menú-->
-     <header>
+    <!--Barra menú-->
+    <header id="header">
         <div class="black-bar">
             <nav>
                 <div class="opciones-barra">
                     <a href= "index.html"> Inicio</a>
                     <a href="index6.html">¿Quiénes somos?</a>
                     <a href="index7.html">Contacto</a>
+                    <a href="index19.html">Carrito</a>
                 </div>
             </nav>
+            <div>
+                <img class="logo-iniciales" src="Imagenes/logo gran via iniciales.jpg" alt="Logo con solo las inciales">
+            </div>
         </div>
+        
     </header>
     
     <!--Nombre de la sección-->
     <main2>
         <div class="nivel-3">
-            <p class="boton-nivel"><a class="atras" href="index.html">Productos Gran Vía</a><a class="atras-past" href="index2.html">> Pastelería</a> > Tartaletas y "Pies"</p>
-            <h2 class="titulo-nivel3">Tartaletas y "Pies"</h2>
+            <p class="boton-nivel"><a class="atras" href="index.html">Productos Gran Vía</a><a class="atras-past" href="index2.html">> Pastelería</a> > Tartaletas, Tortas y "Pies"</p>
+            <h2 class="titulo-nivel3">Tartaletas, Tortas y "Pies"</h2>
+        </div>
+    </main2>
+    
+    <div class="contenedor-icono">
+        <div class="container-cart-icon">
+            
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="icono-carrito"
+        >
+        <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+        />
+    </svg>
+    <div class="count-products">
+        <span class="contador-productos">0</span>
+    </div>
+</div>
+        <div class="container-cart-products hidden-cart"> 
+        <div class="row-product hidden"></div>
+        <div class="cart-product">
+            <div class="info-cart-product">
+                
+            <span class="cantidad-producto-carrito">1</span>
+            <p class="titulo-producto-carrito">Tartaleta de Frutas</p>
+            <span class="precio-producto-carrito">$8.400</span>
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-close"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+            />
+        </svg>
+						</div>
+					</div>
+                    <div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+
+<!--Opciones de las tartaletas y los pies-->
+
+<section class="contenedor-tortas" id="contenedor">
+    <div class="contenedor1-tortas"> 
+        <div>
+            <a class="titulo-prod" href="">
+                <h3>Tartaleta de Frutas</h3>
+                <img class="img-prod" src="Imagenes/pasteleria color.jpg" alt="Imagen de tartaleta de frutas Gran via">
+                <p class="precio">Precio: $8.400</p>
+                <button class="boton-comprar">
+                    <a href="index19.html" target="_blank">Añadir a Carrito </a></button>
+                </a>
             </div>
-        </main2>
-
-   <!--Opciones de las tartaletas y los pies-->
-    
-   <section class="contenedor-prod">
-    <div> 
-        <a class="titulo-prod" href="">
-            <h3>Tartaleta de Frutas</h3>
-            <img class="img-prod" src="Imagenes/pasteleria color.jpg" alt="Imagen pie de limón de la panadería">
-            <p class="precio">Precio: $20.000</p>
-        </a>
-    </div>
-    
-    <div>
-        <a class="titulo-prod" href="">
-            <h3>Tartaleta de Frambuesa</h3>
-            <img class="img-prod" src="Imagenes/panaderia color.jpg" alt="Imagen de los panes que ofrece la panadería">
-            <p class="precio">Precio: $20.000</p>
-        </a>
-    </div>
-    
-    <div>
-        <a class="titulo-prod" href="">
-            <h3>Pie de Limón</h3>
-            <img class="img-prod" src="Imagenes/heladeria color.jpg" alt="Imagen de helados que ofrece la panadería">
-            <p class="precio">Precio: $20.000</p>
-        </a>
-        
-    </div>
-    
-    <div>
-        <a class="titulo-prod" href="">
-            <h3>Pie de Manzana</h3>
-            <img class="img-prod" src="Imagenes/despensa color.jpg" alt="Imagen que muestra productos de despensa">
-            <p class="precio">Precio: $20.000</p>
-        </a>
-    </div>
-
-</section>
-
-</body>
-</html>
+            
+            <div>
+                <a class="titulo-prod" href="">
+                    <h3>Tartaleta de Frambuesa</h3>
+                    <img class="img-prod" src="Imagenes/panaderia color.jpg" alt="Imagen de tartaleta de frambuesa">
+                    <p class="precio">Precio: $11.990</p>
+                    <button class="boton-comprar">
+                        <a href="index19.html" target="_blank">Añadir a Carrito </a></button>
+                    </a>
+                </div>
+                
+                <div>
+                    <a class="titulo-prod" href="">
+                        <h3>Kuchen de Manzana</h3>
+                        <img class="img-prod" src="Imagenes/despensa color.jpg" alt="Imagen que muestra productos de despensa">
+                        <p class="precio">Precio: $10.200</p>
+                        <button class="boton-comprar">
+                            <a href="index19.html" target="_blank">Añadir a Carrito </a></button>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="titulo-prod" href="">
+                            <h3>Kuchen de Nuez</h3>
+                            <img class="img-prod" src="Imagenes/despensa color.jpg" alt="Imagen que muestra productos de despensa">
+                            <p class="precio">Precio: $16.450</p>
+                            <button class="boton-comprar">
+                                <a href="index19.html" target="_blank">Añadir a Carrito  </a></button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contenedor2-tortas">
+                        <div>
+                            <a class="titulo-prod" href="">
+                                <h3>Torta de Yogurt de Maracuyá</h3>
+                                <img class="img-prod" src="Imagenes/despensa color.jpg" alt="Imagen que muestra productos de despensa">
+                                <p class="precio">Precio: $13.800</p>
+                                <button class="boton-comprar">
+                                    <a href="index19.html" target="_blank">Añadir a Carrito </a></button>
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a class="titulo-prod" href="">
+                                    <h3>Torta de Yogurt de Frutilla</h3>
+                                    <img class="img-prod" src="Imagenes/despensa color.jpg" alt="Imagen que muestra productos de despensa">
+                                    <p class="precio">Precio: $9.990</p>
+                                    <button class="boton-comprar">
+                                        <a href="index19.html" target="_blank">Añadir a Carrito </a></button>
+                                    </a>
+                                </div>
+                                
+                                <div>
+                                    <a class="titulo-prod" href="">
+                                        <h3>Torta de Tres Leches</h3>
+                                        <img class="img-prod" src="Imagenes/despensa color.jpg" alt="Imagen que muestra productos de despensa">
+                                        <p class="precio">Precio: $12.990</p>
+                                        <button class="boton-comprar">
+                                            <a href="index19.html" target="_blank">Añadir a Carrito </a></button>
+                                            
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="titulo-prod" href="">
+                                            <h3>Pie de Limón</h3>
+                                            <img class="img-prod" src="Imagenes/heladeria color.jpg" alt="Imagen de helados que ofrece la panadería">
+                                            <p class="precio">Precio: $8.450</p>
+                                        </a>
+                                        <button class="boton-comprar">
+                                            <a href="index19.html" target="_blank">Añadir a Carrito </a></button>
+                                            
+                                        </div>
+                                        <script src="script.js"></script>
+                                    </div>
+                                    
+                                    
+                                </section>
+                                
+                            </body>
+                            </html>

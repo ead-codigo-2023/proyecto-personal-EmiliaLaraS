@@ -13,7 +13,7 @@ body {
 
 /*Barra superior negra*/
 .black-bar {
-    background-color: #000;
+    background-color: #060609;
     padding: 2%;
     position: fixed;
     top: 0;
@@ -40,7 +40,23 @@ nav a {
     font-weight: bold;
 }
 
+.logo-iniciales {
+    margin: 0 1%;
+    position: absolute;
+    width: 100px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantener la proporción */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    top: 10px; /* Ajusta la distancia desde el borde superior */
+}
+
 /*HOME*/
+.bienvenidos{
+    padding-top: 10%;
+    text-align: center;
+    color: #006616;
+    font-size: xx-large;
+    font-style: bold;
+}
 
 /*Imagen logo*/
 .logo {
@@ -49,7 +65,7 @@ nav a {
     left: 242px;
     flex-shrink: 0;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 7%;
 
 }
@@ -130,7 +146,12 @@ section {
 /*Titulo de cada producto*/
 .titulo-prod {
     color: #006616;
-font-size: 120%;
+font-size: 100%;
+
+}
+
+.titulo-grande {
+    font-size: 150%;
 }
 
 /*imagenes de los productos*/
@@ -211,13 +232,11 @@ a {
 
 .atras {
     color: #fff;
-    text-decoration: underline;
     margin-block: 2%;
 }
 
 .atras-past {
     color: #fff;
-    text-decoration: underline;
     
 }
 
@@ -283,6 +302,27 @@ a {
 
 }
 
+/*SECCION PAN TRADICIONAL*/
+.contenedor-pan{
+    column-gap: normal;
+    display: grid;
+}
+
+.contenedor1-pan{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+    padding-top: 5%;
+}
+
+.contenedor2-pan{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+}
+
 
 /* SECCION HELADERIA*/
 .heladeria{
@@ -305,27 +345,33 @@ a {
 
 }
 
-/*SECCION DESPENSA*/ 
-
-.despensa{
-    background-color: #7EB336;
-    padding: 6% 2%;
-    color: #fff;
+.contenedor-helados{
+    column-gap: normal;
+    display: grid;
 }
 
-.titulo-despensa{
-    font-size: 300%;
-    font-style: bold;
-    text-align: left;
-  
+.contenedor1-helados{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+    padding-top: 5%;
 }
 
-.texto-despensa{
-    font-size: 140%;
-    font-style: regular;
-    padding-right: 5%;
-
+.contenedor2-helados{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
 }
+
+.contenedor3-helados {
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+}
+
 
 /*SECCION QUIENES SOMOS*/
 
@@ -379,7 +425,7 @@ h4{
     text-align: right;
 }
 
-/*TARTALETAS Y PIES/GALLETAS*/
+/*TARTALETAS, TORTAS Y PIES/BIZCOCHO/GALLETAS/POSTRES*/
 
 .nivel-3{
     background-color: #7EB336;
@@ -397,3 +443,229 @@ h4{
     text-align: left;
     padding-top: 1%;
 }
+
+.contenedor-tortas{
+    column-gap: normal;
+    display: grid;
+}
+
+.contenedor1-tortas {
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+    padding-top: 5%;
+}
+
+.contenedor2-tortas{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+}
+
+.contenedor3-tortas {
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+    image-rendering: auto;
+}
+
+.contenedor-postre {
+    column-gap: normal;
+    display: grid;
+}
+
+.contenedor1-postre{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+    padding-top: 5%;
+}
+
+.contenedor2-postre{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+}
+
+.contenedor-bizcocho{
+    column-gap: normal;
+    display: grid;
+}
+
+.contenedor1-bizcocho{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+    padding-top: 5%;
+}
+
+.contenedor2-bizcocho{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+}
+
+
+.contenedor-galletas {
+ column-gap: normal;
+ display: grid;
+}
+
+.contenedor1-galletas{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+    padding-top: 5%;
+}
+
+.boton-comprar {
+    background-color: #006616;
+    color: white;
+    font-family: Montserrat ;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.boton-comprar:hover {
+    background-color: #7EB336;
+}
+
+.boton-comprar a{
+    text-decoration: none;
+    color: white;
+}
+
+.icono-carrito{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+   
+}
+
+.icono-carrito:hover {
+    cursor: pointer;
+}
+
+.icon-close {
+    width: 15px;
+    height: 15px;
+    stroke: #000;
+   margin-left: 1%;
+   margin-top: 4%;
+}
+
+.icon-close:hover{
+    stroke: #006616;
+    cursor: pointer;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    top: 55%;
+    right: 0%;
+    background-color: #7EB336;
+    color: #FFF;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+   
+}
+
+.container-cart-icon {
+    position: absolute;
+    right: 0%;
+    
+   
+}
+
+.container-cart-products{
+    position: absolute;
+    background-color: #f3f3f3;
+    width: 600px;
+    right: 3%;
+    z-index: 1;
+    border-radius: 20px ;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+}
+
+.cart-product{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+align-items: center;
+
+}
+
+.info-cart-product {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.titulo-producto-carrito{
+font-size: 100% ;
+}
+
+.precio-producto-carrito{
+font-weight: 700;
+font-size: 100%;
+margin-left: 10px;
+padding-top: 3%;
+}
+
+.cantidad-producto-carrito {
+font-weight: 400;
+font-size: 100%;
+padding-top: 3%;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#contador-productos{
+    font-size: 12px;
+}
+
+.hidden-cart {
+    display: none;
+}
+
+
+

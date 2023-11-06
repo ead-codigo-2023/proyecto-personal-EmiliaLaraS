@@ -105,7 +105,7 @@ img {
 .texto-p{
     padding-top: 2%;
     color: #FFF;
-    font-size: 24px;
+    font-size: 27px;
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.36px;
@@ -406,23 +406,42 @@ h4{
 /*CONTACTO*/
 .contacto{
     padding-top: 7%;
-    padding-bottom: 1%;
     color: #006616;
     margin-left: 2%;
+    padding-left: 2%;
 }
 
+.contenedor-contacto-total{
+    padding-bottom: 15%;
+    background-image: url(Imagenes/portada\ contacto_page-0001.jpg);
+    background-size: 80%;
+    background-position-x: right;
+    background-repeat:no-repeat;
+}
 
 
 .contenedor-cont{
    margin-left: 2%;
+   padding-left: 2%;
 }
 
 .img-cont{
     display: block;
     margin: 0 auto;
     width: 50%; 
-    
     text-align: right;
+}
+
+.pedidos {
+font-size: 200%;
+text-decoration: underline 2%;
+font-weight:500;
+}
+
+.contacto-whatsapp{
+    font-size: 200%;
+    text-decoration: underline 2%;
+    font-weight: 500;
 }
 
 /*TARTALETAS, TORTAS Y PIES/BIZCOCHO/GALLETAS/POSTRES*/

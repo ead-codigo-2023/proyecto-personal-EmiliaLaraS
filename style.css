@@ -1,17 +1,20 @@
-/*Nivel universal de la página*/
+/*CODIGOS GENERALES PARA TODAS LAS PAGINAS*/
+
+/*1) Nivel universal de la página*/
 *{
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
 
-/*Cuerpo de toda la página*/
+/* 2) Cuerpo de toda la página*/
 body {
     font-family: Montserrat;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     
 }
 
-/*Barra superior negra*/
+/* 3) Barra superior negra*/
 .black-bar {
     background-color: #060609;
     padding: 2%;
@@ -22,17 +25,18 @@ body {
     transition: background-color 0.3s; /*transición para suavizar el cambio de color */
 }
 
+/*4) Opciones de la barra*/
 .opciones-barra{
     color: #fff;
 }
 
-/*disposición de la navegación*/ 
+/*5) disposición de la navegación*/ 
 nav {
     display: flex;
     justify-content: left;
 }
 
-/*texto especifico de la navegación*/
+/*6) texto especifico de la navegación*/
 nav a {
     color: #fff;
     text-decoration: none;
@@ -40,129 +44,18 @@ nav a {
     font-weight: bold;
 }
 
+/*7) Logo en la barra */
 .logo-iniciales {
     margin: 0 1%;
     position: absolute;
-    width: 100px; /* Ajusta el ancho de la imagen */
-    height: auto; /* Mantener la proporción */
-    right: 10px; /* Ajusta la distancia desde el borde derecho */
-    top: 10px; /* Ajusta la distancia desde el borde superior */
+    width: 100px; 
+    height: auto; 
+    right: 10px; 
+    top: 10px; 
+   
 }
 
-/*HOME*/
-.bienvenidos{
-    padding-top: 10%;
-    text-align: center;
-    color: #006616;
-    font-size: xx-large;
-    font-style: bold;
-}
-
-/*Imagen logo*/
-.logo {
-    height: 5%;
-    top: 132px;
-    left: 242px;
-    flex-shrink: 0;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 7%;
-
-}
-
-/*imagen en específico*/ 
-img {
-    max-width: 100%; /*Responsivo*/
-}
-
-/* contenedor de imagen y texto*/
-.contenedor {
-    z-index: 1;
-    text-align: center;
-    display: flex;
-    background-image:url(Imagenes/portada\ productos.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 120%;
-    padding: 15%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/*Titulo Nuestos productos*/
-.nuestros-prod {
-    color: #FFF;
-    font-size: 48px;
-    font-style: normal;
-    flex-direction: column;
-    font-weight: 800;
-    line-height: normal;
-    letter-spacing: -0.72px;
-    display: flex;
-}
-
-/*Texto de nuestros productos*/
-.texto-p{
-    padding-top: 2%;
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.36px;
-}
-
-/*Frase en exclamación*/
-.exclamacion {
-    padding-top: 2%;
-    color: #FFF;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: -0.36px;
-}
-
-.pregunta{
-    color: #006616;
-    font-size: 200%;
-    font-style: bold;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-/*contenedor de las cajas de opciones de los productos que venden*/
-.contenedor-prod{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-}
-
-/*Categorías de los productos para que quede como galeria*/
-section {
-    display: flex;
-    gap: 20px;
-}
-
-/*Titulo de cada producto*/
-.titulo-prod {
-    color: #006616;
-font-size: 100%;
-
-}
-
-.titulo-grande {
-    font-size: 150%;
-}
-
-/*imagenes de los productos*/
-
-.img-prod {
-    flex-shrink: 0;
-    border-radius: 10%;
-}
-
-/*Caja negra en la parte interior de la página*/
-
+/*8) Pie página*/
 footer {
     background-color: #000;
     color: #FFF;
@@ -170,103 +63,157 @@ footer {
     font-size: small;
     text-align: left;
     padding-bottom: 5%;
-   
 }
 
+/*9) Titulo de más informacion en el pie de página*/
 .mas-info {
     color: #FFF;
 }
 
+/*10) Contenedor de la información del pie de página*/
 .pie-pagina {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
+/*11) Sub titulo del contenido del pie de página (Horario y Visitanos)*/
 .titulo-box{
     padding-top: 2%;
 }
 
+/*12) Texto que acompaña con el subtitulo, lo especifico de la información*/
 .texto-box {
     text-decoration:underline; 
 }
 
-.texto-box2{
-    text-decoration:underline; 
-}
 
+/*13) Texto que acompaña con el subtitulo, lo especifico de la información (RRSS)*/
 .titulo-box1{
-   padding-top: 6%;
-   padding-left: 9%;
+    padding-top: 2%;
+    padding-left: 9%;
 }
 
 
-/*interacción, cambio el color el link navegable al pasar el cursor*/
+/*14) interacción, cambio el color el link navegable al pasar el cursor*/
 a:hover {
     color: #5cd152; 
 }
 
-/*links navegable*/
+/*15) links navegable*/
 a {
     color: #006616;
     transition: color 0.3s ease; 
-
+    
 }
 
-/* Clase que se agregará al hacer scroll hacia abajo */
+/*16) Clase que se agregará al hacer scroll hacia abajo */
 .scroll-down {
     background-color: #000000; /* Cambia el color de fondo al hacer scroll hacia abajo */
 }
 
-/*Links de las redes sociales*/
+/*17) Links de las redes sociales*/
 .rrss{
     color: #fff;
     transition: color 0.3s ease; 
     margin: 0;
 }
 
+/*18) Imagenes en general*/ 
+img {
+    max-width: 100%; /
+}
+
+
+
+
+
+
+/*CODIGOS COMPARTIDOS PARA NIVEL 2 Y 3 (Categorías y subcategorías)*/
+
+/*1) contenedor padre que contiene las cajas de opciones de los productos que venden*/
+.contenedor-prod{
+    text-align: center; 
+    padding-bottom: 5%;
+    display: flex;
+    column-gap:  20px;
+}
+
+/*2) Contenedor que contiene el Titulo de cada producto y la imagen correspondiente*/
+.titulo-prod {
+    color: #006616;
+    font-size: 100%;
+    
+}
+
+/*3) Nombre de la categoría o el producto en específico*/ 
+.titulo-grande {
+    font-size: 150%;
+}
+
+/*4) Contenedor de la sección de categorías de los productos para que quede como galeria*/
+section {
+    display: flex;
+    gap: 20px;
+}
+
+/*5) imagenes de cada productos*/
+.img-prod {
+    flex-shrink: 0;
+    border-radius: 10%;
+}
+
+/*6) Boton de linea del tiempo de las categorías seleccionadas*/ 
 .boton {
     color: #fff;
-    padding-top: 1%;
+    padding-top: 2%;
     font-size: small;
 }
 
+/*7) Boton para volver al inicio*/ 
 .atras {
     color: #fff;
     margin-block: 2%;
 }
 
+/*8) Boton para volver a la subcategoría seleccionada*/ 
 .atras-past {
     color: #fff;
     
 }
 
+/*9) Boton de la linea del tiempo en la subcategoria seleccionada */ 
 .boton-nivel {
     color: #fff;
     padding-top: 2%;
     font-size: small;
-
+    
 }
-/*SECCION PASTELERÍA*/
-.pasteleria{
+
+/*10) contenedor verde donde tiene el nombre de la categoria*/
+.fondo-categoria{
     background-color: #7EB336;
     padding: 6% 2%;
     color: #fff;
 }
 
-.titulo-pasteleria{
+
+/*11) Titulo grande de la Categoría*/
+.titulo-categoria{
     font-size: 300%;
     font-style: bold;
     text-align: left;
-  
+    
 }
 
-.texto-pasteleria{
+/*12) texto de la categoria*/
+.texto-categoria{
     font-size: 140%;
     font-style: regular;
     padding-right: 5%;
-
+    
 }
 
+/*13) Exclamación "encuentra tu producto! de cada categoría*/
 .exclamacion2{
     color: #006616;
     font-size: 200%;
@@ -276,176 +223,12 @@ a {
     padding-top: 3%;
 }
 
-/*SECCION PANADERIA*/
-
+/*14) Contenedor que contiene las categorias y subcategorias (fondo, linea del tiempo, titulo, texto)*/
 .main2{
     padding: 15%;
 }
 
-.panaderia{
-    background-color: #7EB336;
-    padding: 6% 2%;
-    color: #fff;
-}
-
-.titulo-panaderia{
-    font-size: 300%;
-    font-style: bold;
-    text-align: left;
-  
-}
-
-.texto-panaderia{
-    font-size: 140%;
-    font-style: regular;
-    padding-right: 5%;
-
-}
-
-/*SECCION PAN TRADICIONAL*/
-.contenedor-pan{
-    column-gap: normal;
-    display: grid;
-}
-
-.contenedor1-pan{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-    padding-top: 5%;
-}
-
-.contenedor2-pan{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-}
-
-
-/* SECCION HELADERIA*/
-.heladeria{
-    background-color: #7EB336;
-    padding: 6% 2%;
-    color: #fff;
-}
-
-.titulo-heladeria{
-    font-size: 300%;
-    font-style: bold;
-    text-align: left;
-  
-}
-
-.texto-heladeria{
-    font-size: 140%;
-    font-style: regular;
-    padding-right: 5%;
-
-}
-
-.contenedor-helados{
-    column-gap: normal;
-    display: grid;
-}
-
-.contenedor1-helados{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-    padding-top: 5%;
-}
-
-.contenedor2-helados{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-}
-
-.contenedor3-helados {
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-}
-
-
-/*SECCION QUIENES SOMOS*/
-
-.titulo{
-    padding-top: 7%;
-    padding-bottom: 1%;
-    color: #006616;
-    margin-left: 2%;
-}
-
-.nuestprod-img{
-    width: 100%;
-    padding-bottom: 5%;
-}
-
-.texto {
-    margin-left: 2%;
-    font-size: 100%;
-    margin-right: 2%;
-    padding-bottom: 2%;
-
-}
-
-h4{
-    text-align: center;
-    font-size: medium;
-    padding-top: 5%;
-    padding: 2%;
-}
-
-
-/*CONTACTO*/
-.contacto{
-    padding-top: 7%;
-    color: #006616;
-    margin-left: 2%;
-    padding-left: 2%;
-}
-
-.contenedor-contacto-total{
-    padding-bottom: 15%;
-    background-image: url(Imagenes/portada\ contacto_page-0001.jpg);
-    background-size: 80%;
-    background-position-x: right;
-    background-repeat:no-repeat;
-}
-
-
-.contenedor-cont{
-   margin-left: 2%;
-   padding-left: 2%;
-}
-
-.img-cont{
-    display: block;
-    margin: 0 auto;
-    width: 50%; 
-    text-align: right;
-}
-
-.pedidos {
-font-size: 200%;
-text-decoration: underline 2%;
-font-weight:500;
-}
-
-.contacto-whatsapp{
-    font-size: 200%;
-    text-decoration: underline 2%;
-    font-weight: 500;
-}
-
-/*TARTALETAS, TORTAS Y PIES/BIZCOCHO/GALLETAS/POSTRES*/
-
+/*14) contenedor de las subcategorias*/
 .nivel-3{
     background-color: #7EB336;
     padding-bottom: 1%;
@@ -456,6 +239,13 @@ font-weight:500;
     
 }
 
+/*15) contenedor padre que sostiene todos los productos especificos*/
+.contenedor-padre{
+    column-gap: normal;
+    display: grid;
+}
+
+/*16) titulo de la subcategoria seleccionada*/
 .titulo-nivel3 {
     font-size: 300%;
     font-style: bold;
@@ -463,12 +253,8 @@ font-weight:500;
     padding-top: 1%;
 }
 
-.contenedor-tortas{
-    column-gap: normal;
-    display: grid;
-}
-
-.contenedor1-tortas {
+/*16) contenedor que tiene todos los productos*/
+.contenedor1{
     text-align: center; 
     padding-bottom: 5%;
     display: flex;
@@ -476,75 +262,117 @@ font-weight:500;
     padding-top: 5%;
 }
 
-.contenedor2-tortas{
-    text-align: center; 
-    padding-bottom: 5%;
+
+
+
+
+
+
+
+
+/*TODO DEL CARRITO DE COMPRAS*/
+
+/*1) Contador al seleccionar los productos*/ 
+.count-products{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    background-color: #7EB336;
+    color: #FFF;
+    width: 25px;
+    height: 25px;
     display: flex;
-    column-gap:  20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
 }
 
-.contenedor3-tortas {
-    text-align: center; 
-    padding-bottom: 5%;
+/*2) contenedor del icono del carrito*/
+.container-cart-icon {
+    position: absolute;
+    right: 2%;
+    padding-top: 0.3%;  
+}
+
+/*3) contenedor de los productos seleccionados*/
+.container-cart-products{
+    position: absolute;
+    background-color: #f3f3f3;
+    width: 600px;
+    right: 3%;
+    z-index: 1;
+    border-radius: 20px ;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+/*4) contenedor de la informacion del carrito*/
+.cart-product{
     display: flex;
-    column-gap:  20px;
-    image-rendering: auto;
+    padding: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    align-items: center;
+    
 }
 
-.contenedor-postre {
-    column-gap: normal;
-    display: grid;
-}
-
-.contenedor1-postre{
-    text-align: center; 
-    padding-bottom: 5%;
+/*5) informacion del carrito*/
+.info-cart-product {
     display: flex;
-    column-gap:  20px;
-    padding-top: 5%;
+    justify-content: space-between;
+    flex: 1;
 }
 
-.contenedor2-postre{
-    text-align: center; 
-    padding-bottom: 5%;
+/*6) nombre del producto*/
+.titulo-producto-carrito{
+    font-size: 100% ;
+}
+
+/*7) precio del producto*/
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 100%;
+    margin-left: 10px;
+    padding-top: 3%;
+}
+
+/*8) cantidad seleccionada*/
+.cantidad-producto-carrito {
+    font-weight: 400;
+    font-size: 100%;
+    padding-top: 3%;
+}
+
+/*9) total a pagar de los productos seleccionados*/
+.cart-total{
     display: flex;
-    column-gap:  20px;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+    align-items: center;
 }
 
-.contenedor-bizcocho{
-    column-gap: normal;
-    display: grid;
+/*10) titulo de total*/
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.contenedor1-bizcocho{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-    padding-top: 5%;
+/*11) cantidad $ del total*/
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
 }
 
-.contenedor2-bizcocho{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
+/*12)contador de productos*/
+#contador-productos{
+    font-size: 12px;
 }
 
-
-.contenedor-galletas {
- column-gap: normal;
- display: grid;
+/*13)Esconder el carrito*/
+.hidden-cart {
+    display: none;
 }
-
-.contenedor1-galletas{
-    text-align: center; 
-    padding-bottom: 5%;
-    display: flex;
-    column-gap:  20px;
-    padding-top: 5%;
-}
-
+/* 14) Boton de añadir carrito*/
 .boton-comprar {
     background-color: #006616;
     color: white;
@@ -560,45 +388,142 @@ font-weight:500;
     border-radius: 5px;
 }
 
+/*15) color del boton al pasar el cursor*/
 .boton-comprar:hover {
     background-color: #7EB336;
 }
 
+/*16) Palabra del boton*/
 .boton-comprar a{
     text-decoration: none;
     color: white;
 }
 
+/*17)Icono del carrito*/
 .icono-carrito{
     width: 40px;
     height: 40px;
     stroke: #000;
-   
+    
 }
 
+/*18) Icono del carrito al pasar el cursor, se apunta para apretar*/
 .icono-carrito:hover {
     cursor: pointer;
 }
 
+/*19)Icono para cerrar en el carrito*/
 .icon-close {
     width: 15px;
     height: 15px;
     stroke: #000;
-   margin-left: 1%;
-   margin-top: 4%;
+    margin-left: 1%;
+    margin-top: 4%;
 }
 
+/*20) Icono para cerrar al pasar el cursor, se apunta para apretar*/
 .icon-close:hover{
     stroke: #006616;
     cursor: pointer;
 }
 
-.count-products{
+
+
+
+
+
+
+
+/*INICIO DE LA PÁGINA WEB GRAN VÍA*/
+
+/*1) titulo del inicio de la página web*/
+.bienvenidos{
+    padding-top: 10%;
+    text-align: center;
+    color: #006616;
+    font-size: xx-large;
+    font-style: bold;
+}
+
+/*2) Imagen logo, imagen principal*/
+.logo {
+    height: 5%;
+    top: 132px;
+    left: 242px;
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    
+}
+
+/*3) Contenedor de imagen y texto del inicio de la página*/
+.contenedor {
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    background-image:url(Imagenes/portada\ productos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    padding: 15%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*4) Titulo "Nuestos productos" en la página inicial*/
+.nuestros-prod {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    flex-direction: column;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    display: flex;
+}
+
+/*5) Texto de "nuestros productos" en la página inicial*/
+.texto-p{
+    padding-top: 2%;
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+/*6) Frase en exclamación de la página inicial ("Haz tu pedido y lo llevamos a tu casa")*/
+.exclamacion {
+    padding-top: 2%;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+
+/*7) Pregunta ¿Qué estás buscando? de la página inicial*/
+.pregunta{
+    color: #006616;
+    font-size: 200%;
+    font-style: bold;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+
+
+
+
+
+
+/* SECCION HELADERIA*/
+/*1)Lo que contiene el contador del carrito*/
+.count-products-h{
     position: absolute;
-    top: 55%;
-    right: 0;
-    top: 55%;
-    right: 0%;
+    right: 2%;
+    top: 59%;
     background-color: #7EB336;
     color: #FFF;
     width: 25px;
@@ -607,84 +532,112 @@ font-weight:500;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-   
 }
 
-.container-cart-icon {
-    position: absolute;
-    right: 0%;
+
+
+
+
+
+
+
+/*SECCION QUIENES SOMOS*/
+
+/*1)Titulo de ¿quienes somos?*/
+.titulo{
+    padding-top: 7%;
+    padding-bottom: 1%;
+    color: #006616;
+    margin-left: 2%;
+}
+
+/*2)imagen*/
+.nuestprod-img{
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+/*3)texto de quienes somos*/
+.texto {
+    margin-left: 2%;
+    font-size: 100%;
+    margin-right: 2%;
+    padding-bottom: 2%;
     
-   
 }
 
-.container-cart-products{
-    position: absolute;
-    background-color: #f3f3f3;
-    width: 600px;
-    right: 3%;
-    z-index: 1;
-    border-radius: 20px ;
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-
+/*4) la exclamacion que cierra el parrafo*/
+h4{
+    text-align: center;
+    font-size: medium;
+    padding-top: 5%;
+    padding: 2%;
 }
 
-.cart-product{
-    display: flex;
-    padding: 30px;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-align-items: center;
 
+
+
+
+
+
+
+
+/*CONTACTO*/
+
+/*1) contacto titulo*/
+.contacto{
+    padding-top: 7%;
+    color: #006616;
+    margin-left: 2%;
+    padding-left: 2%;
 }
 
-.info-cart-product {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
+/*2)contenedor del contacto (titulo, numeros)*/
+.contenedor-contacto-total{
+    padding-bottom: 15%;
+    background-image: url(Imagenes/portada\ contacto_page-0001.jpg);
+    background-size: 80%;
+    background-position-x: right;
+    background-repeat:no-repeat;
 }
 
-.titulo-producto-carrito{
-font-size: 100% ;
+/*3) cotenedor de los distintos numeros*/
+.contenedor-cont{
+    margin-left: 2%;
+    padding-left: 2%;
 }
 
-.precio-producto-carrito{
-font-weight: 700;
-font-size: 100%;
-margin-left: 10px;
-padding-top: 3%;
+/*4) imagen de la seccion del contacto*/
+.img-cont{
+    display: block;
+    margin: 0 auto;
+    width: 50%; 
+    text-align: right;
 }
 
-.cantidad-producto-carrito {
-font-weight: 400;
-font-size: 100%;
-padding-top: 3%;
+/*4)titulo pedidos*/
+.pedidos {
+    font-size: 200%;
+    text-decoration: underline 2%;
+    font-weight:500;
 }
 
-.cart-total{
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    gap: 20px;
-    align-items: center;
+/*5)titulo whatsapp*/
+.contacto-whatsapp{
+    font-size: 200%;
+    text-decoration: underline 2%;
+    font-weight: 500;
 }
 
-.cart-total h3{
-    font-size: 20px;
-    font-weight: 700;
-}
 
-.total-pagar{
-    font-size: 20px;
-    font-weight: 900;
-}
 
-#contador-productos{
-    font-size: 12px;
-}
 
-.hidden-cart {
-    display: none;
-}
+
+
+
+
+
+
 
 
 
